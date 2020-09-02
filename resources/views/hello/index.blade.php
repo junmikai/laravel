@@ -7,8 +7,8 @@
 
 @section('content')
 <p>コンテンツ</p>
-<p>controller　view<br>'message' = {{$message}}</p>
-<p>ViewComposer value<br>'view_message'={{$view_message}}</p>
+<p><middleware>google.com</middleware>のリンク</p>
+<p><middleware>yahoo.co.jp</middleware>のリンク</p>
 @endsection
 
 @section('footer')
