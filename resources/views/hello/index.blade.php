@@ -7,9 +7,8 @@
 
 @section('content')
 <p>コンテンツ</p>
-<ul>
-@each('components.item',$data,'item')
-</ul>
+<p>controller　view<br>'message' = {{$message}}</p>
+<p>ViewComposer value<br>'view_message'={{$view_message}}</p>
 @endsection
 
 @section('footer')
