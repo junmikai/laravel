@@ -6,9 +6,16 @@
 @endsection
 
 @section('content')
-<p>コンテンツ</p>
-<p><middleware>google.com</middleware>のリンク</p>
-<p><middleware>yahoo.co.jp</middleware>のリンク</p>
+   <table>
+   <tr><th>Name</th><th>Mail</th><th>Age</th></tr>
+   @foreach ($items as $item)
+       <tr>
+           <td>{{$item->name}}</td>
+           <td>{{$item->mail}}</td>
+           <td>{{$item->age}}</td>
+       </tr>
+   @endforeach
+   </table>
 @endsection
 
 @section('footer')
